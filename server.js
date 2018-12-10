@@ -3,6 +3,7 @@
 var express = require('express');
 var mongo = require('mongodb');
 var mongoose = require('mongoose');
+require('dotenv').config()
 
 var cors = require('cors');
 
@@ -12,7 +13,8 @@ var app = express();
 var port = process.env.PORT || 3000;
 
 /** this project needs a db !! **/ 
-// mongoose.connect(process.env.MONGOLAB_URI);
+let options = {useMongoClient: true}
+mongoose.connect(process.env.MONGOLAB_URI, options);
 
 app.use(cors());
 
