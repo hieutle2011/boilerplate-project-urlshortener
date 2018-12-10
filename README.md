@@ -19,3 +19,5 @@ POST [project_url]/api/shorturl/new - body (urlencoded) :  url=https://www.googl
 #### Will redirect to:
 
 http://forum.freecodecamp.com
+
+Ref: https://dzone.com/articles/how-to-build-a-url-shortener-with-nodejs-and-mongo
